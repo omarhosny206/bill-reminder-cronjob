@@ -2,6 +2,7 @@
 FROM amazoncorretto:17 as build
 WORKDIR /app
 COPY . .
+RUN chmod +x ./gradlew
 RUN ./gradlew clean build -x test
 
 # Stage 2: Create a runtime container
