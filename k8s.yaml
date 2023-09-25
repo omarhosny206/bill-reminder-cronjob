@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: bill-reminder-cronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: bill-reminder-app
+              image: omarhosny102/bill-reminder-app:latest
+              imagePullPolicy: Always
+          restartPolicy: OnFailure
