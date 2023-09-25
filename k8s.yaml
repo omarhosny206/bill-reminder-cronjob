@@ -6,10 +6,12 @@ spec:
   schedule: "*/2 * * * *"
   jobTemplate:
     spec:
+      completions: 1          # Number of completions (runs)
+      backoffLimit: 0         # Retry limit (set to 0 for no retries)
       template:
         spec:
           containers:
             - name: bill-reminder-app
               image: omarhosny102/bill-reminder-app:latest
               imagePullPolicy: Always
-          restartPolicy: OnFailure
+          restartPolicy: Never  # Ensures the pod doesn't restart
