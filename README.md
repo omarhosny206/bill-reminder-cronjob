@@ -1,3 +1,9 @@
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 # Bill Reminder CronJob
 
 This repository contains Kubernetes configuration files for setting up a CronJob to run a Spring Boot application called "bill-reminder-app." This application includes a command line runner bean that executes when the pod is created by the Kubernetes CronJob. The CronJob is scheduled to run at a specified interval to send bill reminders.
@@ -10,8 +16,8 @@ Kubernetes CronJobs automate tasks by creating Pods based on a predefined schedu
 
 Before you proceed, make sure you have the following prerequisites installed:
 
-- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/): Kubernetes command-line tool.
-- A running Kubernetes cluster. You can use [minikube](https://minikube.sigs.k8s.io/docs/start/) for local development/testing or any other Kubernetes cluster.
+- ⚙️ [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/): Kubernetes command-line tool.
+- 🚀 A running Kubernetes cluster. You can use [minikube](https://minikube.sigs.k8s.io/docs/start/) for local development/testing or any other Kubernetes cluster.
 
 ## Usage
 
