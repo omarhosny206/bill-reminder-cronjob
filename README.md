@@ -2,6 +2,10 @@
 
 This repository contains Kubernetes configuration files for setting up a CronJob to run a Spring Boot application called "bill-reminder-app." This application includes a command line runner bean that executes when the pod is created by the Kubernetes CronJob. The CronJob is scheduled to run at a specified interval to send bill reminders.
 
+## How Kubernetes CronJobs Work
+
+Kubernetes CronJobs automate tasks by creating Pods based on a predefined schedule. When a CronJob is scheduled to run, it creates a new Pod with the specified container image and runs the task. Once the task is completed, the Pod is terminated, ensuring that resources are efficiently managed in the cluster. CronJobs also offer features like retries and backoff limits, allowing you to control how tasks are executed and handle potential failures.
+
 ## Prerequisites
 
 Before you proceed, make sure you have the following prerequisites installed:
