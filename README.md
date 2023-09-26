@@ -26,7 +26,7 @@ Before you proceed, make sure you have the following prerequisites installed:
    kubectl get cronjob
    kubectl get pods
    ```
-4. View the logs of the CronJob pods to see the output of the Spring Boot application:
+4. View the logs of the CronJob for a specific pod to see the output of the Spring Boot application:
    ```shell
    kubectl logs <pod_name>
    ```
