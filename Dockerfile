@@ -8,8 +8,6 @@ COPY ./gradle ./gradle
 COPY . .
 
 RUN chmod +x ./gradlew
-# Convert line endings to Unix format
-RUN find . -type f -exec dos2unix {} \;
 RUN ./gradlew build || true
 
 COPY ./src ./src
