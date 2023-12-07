@@ -9,7 +9,7 @@ COPY ./gradle ./gradle
 RUN chmod +x ./gradlew
 RUN ./gradlew build || return 0 
 
-COPY . .
+COPY ./src ./src
 
 RUN ./gradlew clean build -x test
 
